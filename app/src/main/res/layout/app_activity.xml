@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/activity_open_camera_provider"
+            style="@style/Button"
+            android:text="Open Camera w/ FileProvider" />
+
+        <Button
+            android:id="@+id/activity_open_gallery"
+            style="@style/Button"
+            android:text="Open Gallery" />
+
+        <Button
+            android:id="@+id/activity_open_gallery_with_image"
+            style="@style/Button"
+            android:text="Open Gallery Filter Images" />
+
+        <Button
+            android:id="@+id/activity_open_documents"
+            style="@style/Button"
+            android:text="Open Documents" />
+
+        <Button
+            android:id="@+id/activity_open_chooser"
+            style="@style/Button"
+            android:text="Open Chooser" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_result"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        tools:layout_width="150dp" />
+
+</RelativeLayout>
